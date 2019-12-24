@@ -24,6 +24,8 @@ services:
     depends_on:
       - postgres
       - mail
+    ports:
+      - "8383:8383"
     volumes:
       - /data/transfer:/data/transfer
     environment:
